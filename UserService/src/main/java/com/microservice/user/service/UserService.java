@@ -22,8 +22,8 @@ import java.util.stream.Collectors;
 @Service
 public class UserService {
 
-    private String HOTEL_SERVICE_HOST = "http://HOTEL-SERVICE/hotels/";
-    private String RATING_SERVICE_HOST = "http://RATING-SERVICE/ratings/users/";
+    private final String HOTEL_SERVICE_HOST = "http://HOTEL-SERVICE/hotels/";
+    private final String RATING_SERVICE_HOST = "http://RATING-SERVICE/ratings/users/";
     private Logger logger = LoggerFactory.getLogger(UserService.class);
     @Autowired
     private UserRepository userRepository;
